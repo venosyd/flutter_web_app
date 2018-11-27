@@ -19,9 +19,13 @@ class WebApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => MaterialApp(
+        debugShowCheckedModeBanner: false,
         routes: {
           "/": (_) => WebviewScaffold(
-              appBar: StatusBarReplacement(color: statusBarColor), url: url)
+              withLocalStorage: true,
+              appCacheEnabled: true,
+              appBar: StatusBarReplacement(color: statusBarColor),
+              url: url)
         },
       );
 }
