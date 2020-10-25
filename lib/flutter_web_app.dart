@@ -11,17 +11,23 @@ import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 /// perfect to PWA
 ///
 class WebApp extends StatelessWidget {
+  ///
+  const WebApp({
+    @required this.url,
+    this.statusBarColor = Colors.black,
+  });
+
+  ///
   final String url;
 
+  ///
   final Color statusBarColor;
-
-  WebApp({@required this.url, this.statusBarColor = Colors.black});
 
   @override
   Widget build(BuildContext context) => MaterialApp(
         debugShowCheckedModeBanner: false,
         routes: {
-          "/": (_) => WebviewScaffold(
+          '/': (_) => WebviewScaffold(
               withLocalStorage: true,
               appCacheEnabled: true,
               appBar: StatusBarReplacement(color: statusBarColor),
@@ -36,6 +42,7 @@ class WebApp extends StatelessWidget {
 /// replaces it.
 ///
 class StatusBarReplacement extends AppBar {
+  ///
   StatusBarReplacement({Color color}) : super(backgroundColor: color);
 
   @override

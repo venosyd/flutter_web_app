@@ -1,11 +1,11 @@
 name: flutter_web_app
-description: Easy Widget for build PWAs in Flutter
-version: 1.0.1
-author: Sergio Lisan <sels@venosyd.com>
-homepage: https://github.com/venosyd/flutter_web_app
+description: Easy WebView App based on Flutter
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.2.0+2
 
 environment:
-  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+  sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
   flutter:

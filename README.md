@@ -17,7 +17,7 @@ dependencies:
     sdk: flutter
   ...
   flutter_web_app:
-    git: git@github.com:venosyd/flutter_web_app.git
+     git: https://github.com/venosyd/flutter_web_app.git
   ...
 ```
 
