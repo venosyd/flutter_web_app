@@ -28,10 +28,11 @@ class WebApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         routes: {
           '/': (_) => WebviewScaffold(
-              withLocalStorage: true,
-              appCacheEnabled: true,
-              appBar: StatusBarReplacement(color: statusBarColor),
-              url: url)
+                withLocalStorage: true,
+                appCacheEnabled: true,
+                appBar: StatusBarReplacement(color: statusBarColor),
+                url: url,
+              )
         },
       );
 }
