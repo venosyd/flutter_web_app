@@ -13,7 +13,7 @@ import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 class WebApp extends StatelessWidget {
   ///
   const WebApp({
-    @required this.url,
+    required this.url,
     this.statusBarColor = Colors.black,
   });
 
@@ -44,7 +44,8 @@ class WebApp extends StatelessWidget {
 ///
 class StatusBarReplacement extends AppBar {
   ///
-  StatusBarReplacement({Color color}) : super(backgroundColor: color);
+  StatusBarReplacement({Color color = Colors.grey})
+      : super(backgroundColor: color);
 
   @override
   Size get preferredSize => Size(super.preferredSize.width, 0.0);
